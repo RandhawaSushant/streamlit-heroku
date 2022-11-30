@@ -20,6 +20,6 @@ get_ipython().system_raw('./ngrok http 8501 &')
 !curl -s http://localhost:4040/api/tunnels | python3 -c \
     'import sys, json; print("Execute the next cell and the go to the following URL: " +json.load(sys.stdin)["tunnels"][0]["public_url"])'
 
-!streamlit run /content/heroku.py
+!streamlit run /content/app.py
 
 !pip3 freeze > requirements.txt
