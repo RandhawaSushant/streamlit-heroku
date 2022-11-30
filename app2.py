@@ -1,8 +1,8 @@
 import streamlit as st
 
 st.write("""
-# Finding largest of 3 given numbers
-This app finds the value greater than other two numbers
+# Finding sum of two numbers
+This app finds the sum of  two numbers
 """)
 #Get Input
 
@@ -23,9 +23,9 @@ st.write(data)
 
 #Getting largest
 
-sum = [data['First_Number']+data['Second_Number']]
+sum = data['First_Number']+data['Second_Number']
 
 #Output
 
-st.subheader('Greatest number among the given inputs is:')
+st.subheader('Sum of two numbers is :')
 st.write(sum)
